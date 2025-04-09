@@ -12,6 +12,11 @@ function generateStrongPassword(length = 12) {
             return randomAllowedPasswordCharacter;
         })
     .join('');
+
+    while (!isStrongPassword(strongPassword)) {
+        strongPassword = generateStrongPassword(length);
+    }
+
     return strongPassword;
 }
 
@@ -26,5 +31,4 @@ function isStrongPassword(password) {
     return isPasswordStrong;
 }
 
-// export default {generateStrongPassword, isStrongPassword}
 module.exports = {generateStrongPassword, isStrongPassword}
