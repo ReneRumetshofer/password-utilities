@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1744185963874" clover="3.2.0">
+  <project timestamp="1744185963874" name="All files">
+    <metrics statements="11" coveredstatements="10" conditionals="7" coveredconditionals="5" methods="3" coveredmethods="3" elements="21" coveredelements="18" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="index.js" path="/home/rene/Programming/FH/04Semester/CONINT_Praxis/Exercise03/src/index.js">
+      <metrics statements="11" coveredstatements="10" conditionals="7" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="9" count="16" type="stmt"/>
+      <line num="11" count="16" type="stmt"/>
+      <line num="12" count="16" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="19" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="22" count="1" type="cond" truecount="4" falsecount="0"/>
+      <line num="26" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
