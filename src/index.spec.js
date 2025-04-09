@@ -1,4 +1,3 @@
-// import utils from './index.js';
 const { generateStrongPassword, isStrongPassword } = require('./index.js');
 
 describe('generateStrongPassword', () => {
