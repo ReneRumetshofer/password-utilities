@@ -37,6 +37,8 @@ const { generateStrongPassword, isStrongPassword } = require('password-utils');
 
 Generates a strong password with upper/lowercase letters, numbers, and symbols.
 
+Passwords generated with this function are always checked against `isStrongPassword`.
+
 ```
 const password = generateStrongPassword();         // Default length: 12
 const longPassword = generateStrongPassword(20);   // Custom length

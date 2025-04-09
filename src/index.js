@@ -1,7 +1,9 @@
-function generateStrongPassword(length = 12) {
+const utils = module.exports;
+
+utils.generateStrongPassword = function (length = 12) {
     const allowedPasswordCharacters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
-    const strongPassword = Array
+    let strongPassword = Array
     .from(
         { length },
         () => {
@@ -13,14 +15,14 @@ function generateStrongPassword(length = 12) {
         })
     .join('');
 
-    while (!isStrongPassword(strongPassword)) {
-        strongPassword = generateStrongPassword(length);
+    while (!utils.isStrongPassword(strongPassword)) {
+        strongPassword = utils.generateStrongPassword(length);
     }
 
     return strongPassword;
 }
 
-function isStrongPassword(password) {
+utils.isStrongPassword = function(password) {
     if (password.length < 8) {
         return false;
     }
@@ -31,4 +33,3 @@ function isStrongPassword(password) {
     return isPasswordStrong;
 }
 
-module.exports = {generateStrongPassword, isStrongPassword}
